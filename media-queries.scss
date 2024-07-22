@@ -1,0 +1,13 @@
+@import "/breakpoints.scss";
+
+@mixin md {
+    @media screen and (min-width: $br--md) {
+        @content;
+    }
+}
+
+@mixin lg {
+    @media screen and (min-width: $br--lg) {
+        @content;
+    }
+}

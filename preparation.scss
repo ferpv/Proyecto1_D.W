@@ -1,0 +1,28 @@
+@import "./media-queries.scss";
+
+
+.preparation-list {
+    list-style: decimal inside;
+    margin: 20px 0;
+    padding: 0;
+    border-radius: 8px;
+
+}
+
+.preparation-list li {
+    margin-bottom: 20px;
+    text-align: center;
+    /* Centrar el texto y las imágenes dentro de los elementos de la lista */
+}
+
+@media (max-width: 768px) {
+    .preparation-list li {
+        margin-bottom: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .preparation-list li {
+        margin-bottom: 10px;
+    }
+}

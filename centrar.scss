@@ -1,0 +1,11 @@
+@import "./media-queries.scss";
+
+
+.centered-img {
+    display: block;
+    margin: 10px auto;
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+
+}

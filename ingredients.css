@@ -1,0 +1,35 @@
+.ingredients-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  border-radius: 8px;
+
+}
+
+.ingredients-table th,
+.ingredients-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+  border-radius: 8px;
+
+}
+
+.ingredients-table th {
+  background-color: #8f0661;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .ingredients-table th,
+  .ingredients-table td {
+      padding: 6px;
+  }
+}
+
+@media (max-width: 480px) {
+  .ingredients-table th,
+  .ingredients-table td {
+      padding: 4px;
+  }
+}

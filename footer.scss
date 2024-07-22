@@ -1,0 +1,54 @@
+@import "./media-queries.scss";
+
+.footer {
+    background-color: #080808;
+    padding: 20px;
+    text-align: center;
+    border-top: 1px solid #e7e7e7;
+    margin-top: 20px;
+}
+
+.footer__text {
+    margin: 0;
+    font-size: 14px;
+    color: #666;
+
+    @include md {
+        font-size: 16px;
+    }
+
+    @include lg {
+        font-size: 18px;
+    }
+}
+
+.footer__list {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0 0;
+    display: flex;
+    flex-direction: column; // Cambia a columna para pantallas pequeñas
+    justify-content: center;
+    align-items: center; // Centra los elementos
+
+    @include md {
+        flex-direction: row; // Cambia a fila para pantallas medianas y más grandes
+    }
+}
+
+.footer__item {
+    margin: 10px 0;
+
+    @include md {
+        margin: 0 15px;
+    }
+}
+
+.footer__link {
+    color: #8f0661;
+    text-decoration: none;
+}
+
+.footer__link:hover {
+    text-decoration: underline;
+}

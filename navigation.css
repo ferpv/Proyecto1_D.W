@@ -1,0 +1,77 @@
+.nav {
+  background-color: #8f0661;
+  background-image: url('https://img.freepik.com/fotos-premium/vista-delantera-deliciosas-galletas-dulces-atadas-arco-fondo-oscuro-galleta-pastel-dulce_974732-45334.jpg');
+  padding: 20px 0;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  .nav__list {
+      flex-direction: row;
+  }
+}
+
+.nav__item {
+  margin: 10px 0;
+  position: relative;
+}
+
+@media (min-width: 768px) {
+  .nav__item {
+      margin: 0 15px;
+  }
+}
+
+.nav__link {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.nav__link:hover {
+  text-decoration: underline;
+}
+
+.nav__item--dropdown:hover .nav__dropdown {
+  display: block;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.nav__dropdown {
+  display: none;
+  background-color: #3f3c3d;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  width: 300px;
+}
+
+.nav__dropdown-item {
+  width: 100%;
+}
+
+.nav__dropdown-item a {
+  display: block;
+  padding: 10px;
+  color: white;
+  text-decoration: none;
+}
+
+.nav__dropdown-item a:hover {
+  background-color: #3f3c3d;
+}
